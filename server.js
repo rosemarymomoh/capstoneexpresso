@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const errorhandler = require('errorhandler');
 const cors = require('cors');
-
 const app = express();
 const PORT = process.env.PORT || 4000;
 
@@ -24,7 +23,7 @@ app.use('/api', apiRouter);
 
 
 app.listen(PORT, () => {
-  console.log(`Server is listening on PORT: ${PORT}`);
+  console.log(`Server listening on PORT: ${PORT}`);
 });
 
 module.exports = app;
